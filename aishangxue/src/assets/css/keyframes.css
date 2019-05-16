@@ -1,0 +1,54 @@
+/* 管理员登录界面表单弹跳进入 */
+.bounce-in{
+	-webkit-animation:bounce-in 1.2s;
+	-moz-animation:bounce-in 1.2s;
+	-ms-animation:bounce-in 1.2s;
+	animation:bounce-in 1.2s;
+}
+@-webkit-keyframes bounce-in{
+	0%{opacity:0;-webkit-transform:scale(0.3);}
+	50%{opacity:1;-webkit-transform:scale(1.05);}
+	70%{-webkit-transform:scale(0.9);}
+	100%{-webkit-transform:scale(1);}
+}
+@-moz-keyframes bounce-in{
+	0%{opacity:0;-moz-transform:scale(0.3);}
+	50%{opacity:1;-moz-transform:scale(1.05);}
+	70%{-moz-transform:scale(0.9);}
+	100%{-moz-transform:scale(1);}
+}
+@-ms-keyframes bounce-in{
+	0%{opacity:0;-ms-transform:scale(0.3);}
+	50%{opacity:1;-ms-transform:scale(1.05);}
+	70%{-ms-transform:scale(0.9);}
+	100%{-ms-transform:scale(1);}
+}
+@keyframes bounce-in{
+	0%{opacity:0;transform:scale(0.3);}
+	50%{opacity:1;transform:scale(1.05);}
+	70%{transform:scale(0.9);}
+	100%{transform:scale(1);}
+}
+/* 管理员头像循环无休止旋转 */
+.rotate-infinite{
+	-webkit-animation:hover-rotate 10s linear infinite;
+	-moz-animation:hover-rotate 10s linear infinite;
+	-ms-animation:hover-rotate 10s linear infinite;
+	animation:hover-rotate 10s linear infinite;
+}
+@-webkit-keyframes hover-rotate{
+	0%{-webkit-transform:rotate(0deg);}
+	100%{-webkit-transform:rotate(359deg);}
+}
+@-moz-keyframes hover-rotate{
+	0%{-moz-transform:rotate(0deg);}
+	100%{-moz-transform:rotate(359deg);}
+}
+@-ms-keyframes hover-rotate{
+	0%{-ms-transform:rotate(0deg);}
+	100%{-ms-transform:rotate(359deg);}
+}
+@keyframes hover-rotate{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(359deg);}
+}

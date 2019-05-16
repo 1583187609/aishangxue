@@ -1,0 +1,260 @@
+html{
+	font-size: 14px;
+}
+body{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+[type="submit"],button,[class$="btn"],[type="button"]{
+	cursor: pointer;
+}
+input,select,textarea,[type="submit"],button,[class$="btn"],[type="button"]{
+	outline: none;
+}
+textarea{
+	display: block;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+	color: #ddd;
+}
+input::-ms-input-placeholder,textarea::-ms-input-placeholder{
+	color: #ddd;
+}
+input::-moz-placeholder,textarea::-moz-placeholder{
+	color: #ddd;
+}
+label{
+	display: block;
+}
+.wrap{
+	position: relative;
+	margin: 0 3%;
+	min-height: 550px;
+	margin-top: 3rem;
+	background: #eef;
+}
+.clear:after{
+	display: block;
+	content: ".";
+	clear: both;
+	height: 0;
+}
+.el-header{
+	padding: 0;
+}
+.el-menu{
+	border: 0 !important;
+}
+/*********中间线(例如：——————这里是文字——————————)************/
+.middle-line{
+	height: 0;
+	border: none;
+	margin: 1rem;
+	border-top: 1px solid #000;
+}
+.middle-line legend{
+	text-align: center;
+	padding: 0 1rem;
+}
+
+/*****************前端 筛选条件 condition*******************/
+.condition{
+	height: 2.5rem;
+	padding: 0 1rem;
+	font: 500 1rem/2.5rem "微软雅黑";
+	background: skyblue;
+}
+.condition div,.condition label{
+	float: left;
+	margin-right: 2rem;
+}
+.condition input,.condition select{
+	font-size: 1rem;
+	height: 2rem;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+.condition input{
+	width: 8rem;
+}
+.condition [type="submit"]{
+	color: #fff;
+	float: right;
+	border: 2px outset #66f;
+	width: auto;
+	border-radius: .4rem;
+	margin-top: .25rem;
+	background: #00f;
+}
+.condition [type="submit"]:active{
+	border: 2px inset #66f;
+}
+/*****************前端 一、二、三级菜单*******************/
+.first-menu{
+	cursor: pointer;
+	font: 700 1.1rem/2.4rem "微软雅黑";
+	margin: 1px 1rem;
+	padding: 0 .5rem;
+	background: #ccd;
+	/* background: lightskyblue; */
+}
+/* .menu h3{
+	cursor: pointer;
+	font: 600 1rem/2.1rem "微软雅黑";
+	margin: 1px 0;
+	background: #ccc;
+} */
+.first-menu span{
+	display: inline-block;
+	width: 1.4rem;
+}
+.second-menu{
+	display: none;
+	padding: .4rem 0;
+	margin: 0 1rem 0 2.5rem;
+}
+.second-menu li{
+	cursor: pointer;
+	color: #444;
+	text-indent: .3rem;
+	margin: 1px 0;
+	font: normal 1rem/1.8rem "微软雅黑";
+}
+.active-menu-li{
+	background: #dde;
+}
+.second-menu li:hover,.fake-second-menu li:hover{
+	color: #000;
+	background: #dde;
+}
+
+/**************前端个人中心页导航栏**************/
+.aboutme-search-wrapper{
+	height: 2.5rem;
+	margin: 1rem 0;
+	font-size: 1.1rem;
+	border-bottom: 1px solid blue;
+}
+.aboutme-search-wrapper .curr-postion{
+	float: left;
+	text-indent: .5rem;
+	line-height: 2.5rem;
+}
+.aboutme-search-wrapper .title{
+	float: right;
+	font: 900 italic 1.6rem/2.5rem "微软雅黑";
+	margin-right: .5rem;
+	line-height: 2.5rem;
+}
+.aboutme-search-wrapper .search-box{
+	float: right;
+	height: 2rem;
+	font-size: 0;
+	margin: 0 .5rem 0 1rem;
+	border: 1px solid blue;
+	border-radius: .3rem;
+	overflow: hidden;
+}
+.aboutme-search-wrapper .search-box input{
+	height: 2rem;
+	vertical-align: top;
+	border: none;
+}
+.aboutme-search-wrapper .search-box [type="search"]{
+	padding: 0 .5em;
+	width: 16rem;
+}
+.aboutme-search-wrapper .search-box [type="button"]{
+	color: #fff;
+	background: blue;
+}
+.aboutme-search-wrapper .search-box [type="button"]:hover{
+	background: #00d;
+}
+
+
+
+
+
+
+
+
+/*******后端表单样式*********/
+.server fieldset{
+	border: 1px solid lightblue;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.server legend{
+	font-size: 15px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background: lightblue;
+}
+.server label{
+	margin: 10px 0;
+}
+.server select,.server input,.server textarea,.server button{
+	font-size: 14px;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 5px;
+	border-radius: 3px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+.server textarea{
+	width: 100%;
+	height: 60px;
+}
+.server button,.server [type="button"]{
+	color: #fff;
+	padding: 0 10px;
+	border: 0;
+	background: skyblue;
+}
+.server button:hover,.server [type="button"]:hover{
+	background: deepskyblue;
+}
+.server select:focus,.server input:focus,.server textarea:focus{
+	border: 1px solid skyblue;
+}
+.server [type='text']{
+	min-width: 800px;
+}
+.server [type="url"]{
+	min-width: 760px;
+}
+.server .submit-box{
+	text-align: center;
+}
+.server [type="submit"]:hover{
+	background: deepskyblue;
+}
+.server .submit-box [type="submit"]{
+	color: #fff;
+	font-size: 16px;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 16px;
+	border: 0;
+	border-radius: 5px;
+	margin: 30px 0 20px;
+	background: #00f;
+}
+.server .submit-box [type="submit"]:hover{
+	background: #00c;
+}
+
